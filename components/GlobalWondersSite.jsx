@@ -9,10 +9,10 @@ export default function GlobalWondersSite() {
             <img
               src="/logo.png"
               alt="Global Wonders logo"
-             className="h-24 w-auto bg-white rounded-md p-1 shadow-sm"m"
+             className="h-24 w-auto bg-white rounded-md p-1 shadow-sm"
             />
             <span className="sr-only">Global Wonders</span>
-          </a>
+          </
           {/* Primary navigation */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
             <a href="#home" className="hover:text-[#1B7A72]">
