@@ -1,4 +1,4 @@
-export default function GlobalWondersSite() {
+eexport default function GlobalWondersSite() {
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-900">
       {/* Site Header */}
@@ -9,7 +9,7 @@ export default function GlobalWondersSite() {
             <img
               src="/logo.png"
               alt="Global Wonders logo"
-              className="h-12 w-auto bg-white rounded-md p-1 shadow-sm"
+              className="h-16 w-auto bg-white rounded-md p-1 shadow-sm"
             />
             <span className="sr-only">Global Wonders</span>
           </a>
