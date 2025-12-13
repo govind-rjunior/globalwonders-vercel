@@ -1,4 +1,4 @@
-eexport default function GlobalWondersSite() {
+export default function GlobalWondersSite() {
   return (
     <div className="min-h-screen flex flex-col bg-white text-slate-900">
       {/* Site Header */}
