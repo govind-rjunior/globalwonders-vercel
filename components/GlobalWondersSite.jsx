@@ -9,7 +9,7 @@ eexport default function GlobalWondersSite() {
             <img
               src="/logo.png"
               alt="Global Wonders logo"
-              className="h-16 w-auto bg-white rounded-md p-1 shadow-sm"
+             className="h-24 w-auto bg-white rounded-md p-1 shadow-sm"m"
             />
             <span className="sr-only">Global Wonders</span>
           </a>
