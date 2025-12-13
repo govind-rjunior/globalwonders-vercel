@@ -16,7 +16,7 @@ export default function GlobalWondersSite() {
                 </a>
           {/* Primary navigation */}
           <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-                       a>
+                     >
           
             <a href="#home" className="hover:text-[#1B7A72]">
               Home
