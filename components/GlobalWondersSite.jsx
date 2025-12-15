@@ -1,47 +1,10 @@
+import Header from './Header';
+
 export default function GlobalWondersSite() {
   return (
-    <div className="min-h-screen flex flex-col bg-white text-slate-900">
+   <div className="min-h-screen flex flex-col bg-white text-slate-900 scroll-smooth">
       {/* Site Header */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b">
-        <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-          {/* Logo and brand */}
-          <a href="#home" className="flex items-center gap-3">
-            <img
-              src="/logo.png"
-              alt="Global Wonders logo"
-             className="h-24 w-auto bg-white rounded-md p-1 shadow-sm"
-            />
-            <span className="sr-only">Global Wonders</span>
-          
-                </a>
-          {/* Primary navigation */}
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-                     >
-          
-            <a href="#home" className="hover:text-[#1B7A72]">
-              Home
-            </a>
-            <a href="#about" className="hover:text-[#1B7A72]">
-              About
-            </a>
-            <a href="#solutions" className="hover:text-[#1B7A72]">
-              Solutions
-            </a>
-            <a href="#responsible" className="hover:text-[#1B7A72]">
-              Responsibility
-            </a>
-            <a href="#process" className="hover:text-[#1B7A72]">
-              Process
-            </a>
-            <a
-              href="#contact"
-              className="px-3 py-1.5 rounded-xl bg-[#1B7A72] text-white hover:opacity-90"
-            >
-              Contact
-            </a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section
