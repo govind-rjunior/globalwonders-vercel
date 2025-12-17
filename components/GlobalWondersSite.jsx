@@ -1,36 +1,102 @@
 import Header from './Header';
+import HeroVisual from './HeroVisual';
+import {
+  DealIcon,
+  FundraisingIcon,
+  NetworkIcon,
+  MAIcon,
+  VCIcon,
+  DebtIcon,
+  TrendUpIcon,
+  UsersIcon,
+  RocketIcon,
+  ShieldIcon
+} from './Icons';
+import ProcessFlow from './ProcessFlow';
 
 export default function GlobalWondersSite() {
   return (
-   <div className="min-h-screen flex flex-col bg-white text-slate-900 scroll-smooth">
+    <div className="min-h-screen flex flex-col bg-white text-slate-900 scroll-smooth">
       {/* Site Header */}
       <Header />
 
-      {/* Hero Section */}
+      {/* Enhanced Hero Section */}
       <section
         id="home"
-        className="flex flex-col items-center justify-center px-4 py-24 text-center bg-[#1B7A72]/5"
+        className="relative flex flex-col items-center justify-center px-4 py-24 text-center overflow-hidden"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-[#1B7A72] tracking-tight">
-          Connecting Smart Funds with Game‑Changing Startups
-        </h1>
-        <p className="mt-4 max-w-2xl text-lg text-slate-700">
-          Responsible realization of capital begins with the right partnerships.
-          We bridge the gap between visionary investors and ambitious companies.
-        </p>
-        <div className="mt-6 flex gap-4">
-          <a
-            href="#contact"
-            className="px-5 py-2.5 rounded-xl bg-[#1B7A72] text-white font-semibold hover:opacity-90"
-          >
-            Start Your Journey
-          </a>
-          <a
-            href="#about"
-            className="px-5 py-2.5 rounded-xl border border-[#1B7A72] text-[#1B7A72] font-semibold hover:bg-[#1B7A72]/10"
-          >
-            Learn More
-          </a>
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-[#1B7A72]/5">
+          <svg className="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="hero-pattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+                <circle cx="20" cy="20" r="1.5" fill="#1B7A72" opacity="0.1" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#hero-pattern)" />
+          </svg>
+        </div>
+
+        {/* Hero Content */}
+        <div className="relative z-10">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#1B7A72] tracking-tight">
+            Connecting Smart Funds with<br className="hidden md:block" /> Game-Changing Startups
+          </h1>
+          <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-700">
+            Responsible realization of capital begins with the right partnerships.
+            We bridge the gap between visionary investors and ambitious companies.
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="#contact"
+              className="px-6 py-3 rounded-xl bg-[#1B7A72] text-white font-semibold hover:opacity-90 transition-opacity"
+            >
+              Start Your Journey
+            </a>
+            <a
+              href="#about"
+              className="px-6 py-3 rounded-xl border-2 border-[#1B7A72] text-[#1B7A72] font-semibold hover:bg-[#1B7A72]/10 transition-colors"
+            >
+              Learn More
+            </a>
+          </div>
+        </div>
+        <HeroVisual />
+      </section>
+
+      {/* Credibility Strip */}
+      <section className="bg-white border-y border-slate-200 py-12 px-4">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="flex justify-center mb-3 text-[#1B7A72]">
+                <NetworkIcon />
+              </div>
+              <div className="text-3xl md:text-4xl font-bold text-[#1B7A72]">100+</div>
+              <div className="text-sm text-slate-600 mt-1">VC Funds & Investors</div>
+            </div>
+            <div className="text-center">
+              <div className="flex justify-center mb-3 text-[#1B7A72]">
+                <RocketIcon />
+              </div>
+              <div className="text-3xl md:text-4xl font-bold text-[#1B7A72]">Fast</div>
+              <div className="text-sm text-slate-600 mt-1">Tracked Funding</div>
+            </div>
+            <div className="text-center">
+              <div className="flex justify-center mb-3 text-[#1B7A72]">
+                <ShieldIcon />
+              </div>
+              <div className="text-3xl md:text-4xl font-bold text-[#1B7A72]">Expert</div>
+              <div className="text-sm text-slate-600 mt-1">Advisory Services</div>
+            </div>
+            <div className="text-center">
+              <div className="flex justify-center mb-3 text-[#1B7A72]">
+                <TrendUpIcon />
+              </div>
+              <div className="text-3xl md:text-4xl font-bold text-[#1B7A72]">End-to-End</div>
+              <div className="text-sm text-slate-600 mt-1">Support</div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -69,95 +135,181 @@ export default function GlobalWondersSite() {
         </div>
       </section>
 
-      {/* Solutions Section */}
+      {/* Enhanced Solutions Section with Icons */}
       <section id="solutions" className="bg-[#1B7A72]/5 py-20 px-4">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1B7A72] text-center mb-10">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-semibold text-[#1B7A72] text-center mb-4">
             Our Solutions
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
+            Comprehensive services tailored to meet the unique needs of startups and investors
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Tailored Deal Structuring */}
-            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white">
+            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
+                <DealIcon />
+              </div>
               <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
                 Tailored Deal Structuring
               </h3>
-              <ul className="list-disc ml-5 text-slate-700 space-y-1">
+              <ul className="list-disc ml-5 text-slate-700 space-y-1.5 text-sm">
                 <li>
                   Expert guidance on selecting the right investment instruments.
                 </li>
                 <li>
-                  Use of traditional and alternative data for informed decision
-                  making.
+                  Use of traditional and alternative data for informed decision making.
                 </li>
               </ul>
             </div>
+
             {/* Comprehensive Fundraising Support */}
-            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white">
+            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
+                <FundraisingIcon />
+              </div>
               <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
                 Comprehensive Fundraising Support
               </h3>
-              <ul className="list-disc ml-5 text-slate-700 space-y-1">
+              <ul className="list-disc ml-5 text-slate-700 space-y-1.5 text-sm">
                 <li>
-                  End‑to‑end assistance in securing funding, from crafting
-                  business plans to financial modelling.
+                  End‑to‑end assistance in securing funding, from crafting business plans to financial modelling.
                 </li>
                 <li>
-                  Fast‑tracked funding process that streamlines access to
-                  capital.
+                  Fast‑tracked funding process that streamlines access to capital.
                 </li>
               </ul>
             </div>
+
             {/* Funding Acceleration Network */}
-            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white">
+            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
+                <NetworkIcon />
+              </div>
               <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
                 Funding Acceleration Network
               </h3>
-              <ul className="list-disc ml-5 text-slate-700 space-y-1">
+              <ul className="list-disc ml-5 text-slate-700 space-y-1.5 text-sm">
                 <li>
-                  A vast network of over 100 venture capital funds, angel
-                  investors and family offices.
+                  A vast network of over 100 venture capital funds, angel investors and family offices.
                 </li>
                 <li>
-                  A dynamic ecosystem fostering partnerships and providing
-                  real‑time economic and business insights.
+                  A dynamic ecosystem fostering partnerships and providing real‑time economic and business insights.
                 </li>
               </ul>
             </div>
+
             {/* M&A Services */}
-            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white">
+            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
+                <MAIcon />
+              </div>
               <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
                 M&amp;A Services
               </h3>
-              <ul className="list-disc ml-5 text-slate-700 space-y-1">
+              <ul className="list-disc ml-5 text-slate-700 space-y-1.5 text-sm">
                 <li>
-                  Advisory on integration strategies to ensure a smooth
-                  transition post‑investment.
+                  Advisory on integration strategies to ensure a smooth transition post‑investment.
                 </li>
                 <li>
-                  Ongoing advisory post‑deal closure to achieve desired
-                  outcomes.
+                  Ongoing advisory post‑deal closure to achieve desired outcomes.
                 </li>
               </ul>
             </div>
+
             {/* Venture Capital & Private Equity */}
-            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white">
+            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
+                <VCIcon />
+              </div>
               <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
                 Venture Capital &amp; Private Equity
               </h3>
-              <p className="text-slate-700">
-                Comprehensive assistance in securing capital infusion at all
-                stages of a company’s growth.
+              <p className="text-slate-700 text-sm">
+                Comprehensive assistance in securing capital infusion at all stages of a company's growth.
               </p>
             </div>
+
             {/* Debt Financing */}
-            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white">
+            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
+                <DebtIcon />
+              </div>
               <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
                 Debt Financing
               </h3>
-              <p className="text-slate-700">
-                Navigate beyond equity transactions with advisory on working
-                capital loans, venture debt and revenue‑based financing.
+              <p className="text-slate-700 text-sm">
+                Navigate beyond equity transactions with advisory on working capital loans, venture debt and revenue‑based financing.
               </p>
+            </div>
+          </div>
+
+          {/* How We Help Visual */}
+          <div className="mt-16 p-8 bg-white rounded-2xl border border-slate-200 shadow-sm">
+            <h3 className="text-2xl font-semibold text-[#1B7A72] text-center mb-8">
+              How We Help You Succeed
+            </h3>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+              {/* Startups */}
+              <div className="flex-1 text-center">
+                <div className="w-16 h-16 mx-auto rounded-full bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
+                  <RocketIcon />
+                </div>
+                <h4 className="font-semibold text-lg text-[#1B7A72] mb-2">Startups</h4>
+                <p className="text-sm text-slate-600">
+                  Access funding, expert guidance, and investor network
+                </p>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:block text-[#1B7A72]">
+                <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <div className="md:hidden text-[#1B7A72]">
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              {/* Global Wonders */}
+              <div className="flex-1 text-center">
+                <div className="w-20 h-20 mx-auto rounded-full bg-[#1B7A72] flex items-center justify-center text-white mb-4">
+                  <svg className="w-10 h-10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
+                    <path d="M2 12H22M12 2C14.5 4.5 16 8 16 12C16 16 14.5 19.5 12 22M12 2C9.5 4.5 8 8 8 12C8 16 9.5 19.5 12 22" stroke="currentColor" strokeWidth="2" />
+                  </svg>
+                </div>
+                <h4 className="font-semibold text-lg text-[#1B7A72] mb-2">Global Wonders</h4>
+                <p className="text-sm text-slate-600">
+                  Advisory, structuring, and ongoing support
+                </p>
+              </div>
+
+              {/* Arrow */}
+              <div className="hidden md:block text-[#1B7A72]">
+                <svg className="w-12 h-12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+              <div className="md:hidden text-[#1B7A72]">
+                <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 5V19M12 19L5 12M12 19L19 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              </div>
+
+              {/* Investors */}
+              <div className="flex-1 text-center">
+                <div className="w-16 h-16 mx-auto rounded-full bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
+                  <UsersIcon />
+                </div>
+                <h4 className="font-semibold text-lg text-[#1B7A72] mb-2">Investors</h4>
+                <p className="text-sm text-slate-600">
+                  Vetted opportunities and streamlined deal flow
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -184,7 +336,7 @@ export default function GlobalWondersSite() {
               </li>
               <li>
                 Provide investors with a clear understanding of each
-                startup’s strategic direction and use of funds.
+                startup's strategic direction and use of funds.
               </li>
               <li>
                 Promote financial sustainability and scalable growth models
@@ -217,117 +369,7 @@ export default function GlobalWondersSite() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section id="process" className="bg-[#1B7A72]/5 py-20 px-4">
-        <div className="mx-auto max-w-5xl">
-          <h2 className="text-3xl md:text-4xl font-semibold text-[#1B7A72] text-center mb-10">
-            Our Process
-          </h2>
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Initial call & background checks */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#1B7A72]">
-                Initial Engagement
-              </h3>
-              <p className="text-slate-700">
-                We begin with an initial call to understand your company’s
-                vision, mission and goals. This discussion covers your
-                background, product or service offerings, market potential and
-                team composition, helping us establish rapport and clarify
-                expectations.
-              </p>
-              <p className="text-slate-700">
-                Within a week after the call, we perform background checks to
-                evaluate viability, growth prospects and risks by reviewing your
-                business model, expansion plans, financials, legal documents and
-                technology assessments.
-              </p>
-            </div>
-            {/* Onboarding & investment process */}
-            <div className="space-y-6">
-              <h3 className="text-xl font-semibold text-[#1B7A72]">
-                Onboarding &amp; Investment
-              </h3>
-              <p className="text-slate-700">
-                Once due diligence is complete, onboarding commences with a
-                mandate letter that outlines financial terms. We provide a
-                negative list of previously contacted investors and a document
-                checklist to ensure compliance, signalling a formal commitment
-                to proceed.
-              </p>
-              <p className="text-slate-700">
-                Upon signing the mandate, we finalise legal documents and your
-                investment docket, curate a list of investors whose criteria
-                align with your business model and then execute the investment
-                transaction. Our goal is to expedite fundraising by proactively
-                targeting the right investors.
-              </p>
-            </div>
-          </div>
-          {/* Process flow summary */}
-          <div className="mt-12 grid md:grid-cols-5 gap-6 text-center">
-            <div className="flex flex-col items-center">
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#1B7A72] text-white font-bold">
-                1
-              </div>
-              <h4 className="mt-3 font-medium text-[#1B7A72]">
-                Application &amp; Assessment
-              </h4>
-              <p className="mt-1 text-sm text-slate-700">
-                Introductory calls to assess companies against predefined
-                criteria.
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#1B7A72] text-white font-bold">
-                2
-              </div>
-              <h4 className="mt-3 font-medium text-[#1B7A72]">
-                Advisory &amp; Preparation
-              </h4>
-              <p className="mt-1 text-sm text-slate-700">
-                Tailored advisory services to prepare companies for the
-                investment process.
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#1B7A72] text-white font-bold">
-                3
-              </div>
-              <h4 className="mt-3 font-medium text-[#1B7A72]">
-                Investor Introductions
-              </h4>
-              <p className="mt-1 text-sm text-slate-700">
-                Structured introductions to potential investors through pitch
-                sessions and one‑on‑one meetings.
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#1B7A72] text-white font-bold">
-                4
-              </div>
-              <h4 className="mt-3 font-medium text-[#1B7A72]">
-                Negotiation &amp; Deal Structuring
-              </h4>
-              <p className="mt-1 text-sm text-slate-700">
-                Assistance with negotiating terms and structuring a win‑win deal.
-              </p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="h-12 w-12 flex items-center justify-center rounded-full bg-[#1B7A72] text-white font-bold">
-                5
-              </div>
-              <h4 className="mt-3 font-medium text-[#1B7A72]">
-                Closure &amp; Post‑Investment
-              </h4>
-              <p className="mt-1 text-sm text-slate-700">
-                Post‑investment support to help startups realise their growth
-                trajectories.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+   <ProcessFlow />
 
       {/* Contact Section */}
       <section
@@ -344,11 +386,23 @@ export default function GlobalWondersSite() {
         </p>
         <a
           href="mailto:info@globalwonders.co"
-          className="inline-block px-5 py-2.5 rounded-xl bg-[#1B7A72] text-white font-semibold hover:opacity-90"
+          className="inline-block px-6 py-3 rounded-xl bg-[#1B7A72] text-white font-semibold hover:opacity-90 transition-opacity"
         >
           Contact Us
         </a>
       </section>
+
+      <footer className="bg-slate-900 text-white py-8 px-4">
+        <div className="mx-auto max-w-6xl text-center">
+          <div className="text-2xl font-bold text-[#1B7A72] mb-4">GLOBAL WONDERS</div>
+          <p className="text-slate-400 mb-4">
+            Connecting Smart Funds with Game-Changing Startups
+          </p>
+          <p className="text-sm text-slate-500">
+            © 2025 Global Wonders. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
