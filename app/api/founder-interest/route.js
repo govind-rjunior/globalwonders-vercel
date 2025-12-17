@@ -50,8 +50,8 @@ export async function POST(request) {
     // Email to info@globalwonders.co
     const { data: notificationData, error: notificationError } =
       await resend.emails.send({
-        from: "Global Wonders",
-        to: "jaifm5525@gmail.com",
+        from: "Global Wonders <onboarding@resend.dev>",
+        to: "info@globalwonders.co",
         subject: `🚀 New Founder Interest: ${companyName} - ${finalSector}`,
         html: `
         <!DOCTYPE html>
@@ -543,7 +543,6 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
         <body>
           <div class="container">
             <div class="header">
-              <div class="logo">🎯</div>
               <h1>Thank You, ${fullName.split(" ")[0]}!</h1>
               <p style="margin: 0; opacity: 0.95;">We've received your founder interest form</p>
             </div>
@@ -554,12 +553,12 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               <p>Thank you for expressing interest in partnering with Global Wonders. We've successfully received your submission for <strong>${companyName}</strong> and are excited to learn more about your ${finalSector} venture.</p>
               
               <div class="highlight-box">
-                <h3>✅ Your Submission</h3>
+                <h3>Your Submission</h3>
                 <p>We've captured all the details about your funding needs and will review them carefully with our investment advisory team.</p>
               </div>
 
               <div class="company-details">
-                <h4>📋 Submission Summary</h4>
+                <h4>Submission Summary</h4>
                 <div class="detail"><strong>Company:</strong> ${companyName}</div>
                 <div class="detail"><strong>Sector:</strong> ${finalSector}</div>
                 <div class="detail"><strong>Funding Status:</strong> ${fundingStatus}</div>
@@ -567,7 +566,7 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               </div>
 
               <div class="timeline">
-                <h3>⏱️ What Happens Next?</h3>
+                <h3>What Happens Next?</h3>
                 <ul>
                   <li><strong>Within 48 hours:</strong> Our team will review your submission</li>
                   <li><strong>Next 3-5 days:</strong> We'll reach out via email or phone to discuss your needs</li>
@@ -586,7 +585,6 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               <p><strong>Need immediate assistance?</strong> Feel free to reach out to us directly:</p>
               <p style="color: #1B7A72; font-weight: 600;">
                 📧 info@globalwonders.co<br>
-                📞 022-2266 3344
               </p>
               
               <div class="signature">
@@ -600,8 +598,7 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               <strong>RAMAN GLOBALWONDERS CONSULTING PRIVATE LIMITED</strong>
               <p>NO. 11 2ND FLOOR, DIVYA COMMERCIAL COMPLEX, NO. 37<br>
               Mumbai-400071, Maharashtra, India</p>
-              <p>📧 <a href="mailto:info@globalwonders.co">info@globalwonders.co</a> | 
-              📞 <a href="tel:+912222663344">022-2266 3344</a></p>
+              <p>📧 <a href="mailto:info@globalwonders.co">info@globalwonders.co</a>
               <p style="margin-top: 15px; font-size: 11px; color: #9ca3af;">
                 This email was sent because you submitted a Founder Interest Form on our website.<br>
                 © 2025 Global Wonders. All rights reserved.
@@ -631,7 +628,6 @@ WHAT HAPPENS NEXT?
 
 Need immediate assistance?
 Email: info@globalwonders.co
-Phone: 022-2266 3344
 
 Warm regards,
 The Global Wonders Team
