@@ -10,7 +10,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b shadow-sm">
       <div className="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
         {/* Logo and brand */}
-        <a href="#home" className="flex items-center gap-3">
+        <a href="/" className="flex items-center gap-3">
           <Image
             src="/new-logo.png"
             alt="Global Wonders logo"
@@ -23,19 +23,19 @@ export default function Header() {
         
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
-          <a href="#home" className="hover:text-[#1B7A72] transition-colors">
+          <a href="/#home" className="hover:text-[#1B7A72] transition-colors">
             Home
           </a>
-          <a href="#about" className="hover:text-[#1B7A72] transition-colors">
+          <a href="/#about" className="hover:text-[#1B7A72] transition-colors">
             About
           </a>
-          <a href="#solutions" className="hover:text-[#1B7A72] transition-colors">
+          <a href="/#solutions" className="hover:text-[#1B7A72] transition-colors">
             Solutions
           </a>
-          <a href="#responsible" className="hover:text-[#1B7A72] transition-colors">
+          <a href="/#responsible" className="hover:text-[#1B7A72] transition-colors">
             Responsibility
           </a>
-          <a href="#process" className="hover:text-[#1B7A72] transition-colors">
+          <a href="/#process" className="hover:text-[#1B7A72] transition-colors">
             Process
           </a>
           <a
@@ -66,23 +66,23 @@ export default function Header() {
       {mobileMenuOpen && (
         <nav className="md:hidden border-t bg-white">
           <div className="px-4 py-3 space-y-3">
-            <a href="#home" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="/#home" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Home
             </a>
-            <a href="#about" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="/#about" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               About
             </a>
-            <a href="#solutions" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="/#solutions" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Solutions
             </a>
-            <a href="#responsible" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="/#responsible" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Responsibility
             </a>
-            <a href="#process" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
+            <a href="/#process" className="block py-2 hover:text-[#1B7A72] transition-colors" onClick={() => setMobileMenuOpen(false)}>
               Process
             </a>
             <a
-              href="#contact"
+              href="/#contact"
               className="block w-full text-center px-3 py-2 rounded-xl bg-[#1B7A72] text-white hover:bg-[#156962] transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >

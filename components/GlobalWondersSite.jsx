@@ -1,3 +1,4 @@
+import Footer from './Footer';
 import Header from './Header';
 import HeroVisual from './HeroVisual';
 import {
@@ -13,6 +14,7 @@ import {
   ShieldIcon
 } from './Icons';
 import ProcessFlow from './ProcessFlow';
+import Link from 'next/link';
 
 export default function GlobalWondersSite() {
   return (
@@ -47,15 +49,15 @@ export default function GlobalWondersSite() {
             We bridge the gap between visionary investors and ambitious companies.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contact"
-              className="px-6 py-3 rounded-xl bg-[#1B7A72] text-white font-semibold hover:opacity-90 transition-opacity"
+            <Link
+              href="/founder-interest"
+              className="px-6 py-3 rounded-xl bg-[#1B7A72] text-white font-semibold hover:opacity-90 transition-opacity text-center"
             >
               Start Your Journey
-            </a>
+            </Link>
             <a
               href="#about"
-              className="px-6 py-3 rounded-xl border-2 border-[#1B7A72] text-[#1B7A72] font-semibold hover:bg-[#1B7A72]/10 transition-colors"
+              className="px-6 py-3 rounded-xl border-2 border-[#1B7A72] text-[#1B7A72] font-semibold hover:bg-[#1B7A72]/10 transition-colors text-center"
             >
               Learn More
             </a>
@@ -369,40 +371,38 @@ export default function GlobalWondersSite() {
         </div>
       </section>
 
-   <ProcessFlow />
+      <ProcessFlow />
 
+      {/* Contact Section */}
       {/* Contact Section */}
       <section
         id="contact"
         className="mx-auto max-w-5xl px-4 py-20 text-center"
       >
         <h2 className="text-3xl md:text-4xl font-semibold text-[#1B7A72] mb-6">
-          Get in Touch
+          Ready to Get Started?
         </h2>
         <p className="text-slate-700 mb-6">
-          Ready to accelerate your growth or explore investment opportunities?
-          Reach out to our team today and discover how Global Wonders can help
-          you achieve your ambitions.
+          Whether you're a founder seeking funding or an investor looking for opportunities,
+          we're here to help you achieve your ambitions.
         </p>
-        <a
-          href="mailto:info@globalwonders.co"
-          className="inline-block px-6 py-3 rounded-xl bg-[#1B7A72] text-white font-semibold hover:opacity-90 transition-opacity"
-        >
-          Contact Us
-        </a>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link
+            href="/founder-interest"
+            className="inline-block px-8 py-4 rounded-xl bg-[#1B7A72] text-white font-semibold hover:opacity-90 transition-opacity"
+          >
+            Founder Interest Form
+          </Link>
+          <a
+            href="mailto:info@globalwonders.co"
+            className="inline-block px-8 py-4 rounded-xl border-2 border-[#1B7A72] text-[#1B7A72] font-semibold hover:bg-[#1B7A72]/10 transition-colors"
+          >
+            Contact Us Directly
+          </a>
+        </div>
       </section>
 
-      <footer className="bg-slate-900 text-white py-8 px-4">
-        <div className="mx-auto max-w-6xl text-center">
-          <div className="text-2xl font-bold text-[#1B7A72] mb-4">GLOBAL WONDERS</div>
-          <p className="text-slate-400 mb-4">
-            Connecting Smart Funds with Game-Changing Startups
-          </p>
-          <p className="text-sm text-slate-500">
-            © 2025 Global Wonders. All rights reserved.
-          </p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
