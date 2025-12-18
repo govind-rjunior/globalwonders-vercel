@@ -39,7 +39,7 @@ export default function Header() {
             Process
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="px-3 py-1.5 rounded-xl bg-[#1B7A72] text-white hover:bg-[#156962] transition-colors"
           >
             Contact

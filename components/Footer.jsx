@@ -38,7 +38,7 @@ export default function Footer() {
                             <p className="text-slate-400 leading-relaxed">
                                 <span className="text-slate-500">Registered Office:</span><br />
                                 NO. 11 2ND FLOOR, DIVYA COMMERCIAL COMPLEX,<br />
-                                NO. 37, Mumbai, Mumbai<br />
+                                NO. 37<br />
                                 Mumbai-400071, Maharashtra, India
                             </p>
                         </div>
@@ -53,9 +53,9 @@ export default function Footer() {
                                 <a href="mailto:info@globalwonders.co" className="text-[#1B7A72] hover:text-[#15645d] transition-colors">
                                     info@globalwonders.co
                                 </a>
-                                {/* <p className="text-slate-400 mt-1">
-                                    <a href="tel:+912222663344" className="hover:text-white transition-colors">022-2266 3344</a>
-                                </p> */}
+                                <p className="text-slate-400 mt-1">
+                                    <a href="tel:+919867023591" className="hover:text-white transition-colors">+91 98670 23591 (Available on WhatsApp)</a>
+                                </p>
                             </div>
                         </div>
                     </div>

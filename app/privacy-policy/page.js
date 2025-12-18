@@ -126,8 +126,8 @@ export default function PrivacyPolicyPage() {
                   <strong>Registered office / mailing address:</strong>
                 </p>
                 <p className="text-sm text-slate-600 mb-3">
-                  NO. 11 2ND, FLOOR, DIVYA COMMERCIAL COMPLEX, NO. 37, Mumbai,
-                  Mumbai, Mumbai-400071, Maharashtra, India
+                  NO. 11 2ND, FLOOR, DIVYA COMMERCIAL COMPLEX, NO. 37,
+                  Mumbai-400071, Maharashtra, India
                 </p>
                 <p className="text-sm text-slate-700 mb-1">
                   <strong>Privacy contact:</strong>
@@ -478,7 +478,7 @@ export default function PrivacyPolicyPage() {
                       </td>
                       <td className="py-2 text-slate-600">
                         NO. 11 2ND, FLOOR, DIVYA COMMERCIAL COMPLEX, NO. 37,
-                        Mumbai, Mumbai, Mumbai-400071, Maharashtra, India
+                        Mumbai-400071, Maharashtra, India
                       </td>
                     </tr>
                     <tr>

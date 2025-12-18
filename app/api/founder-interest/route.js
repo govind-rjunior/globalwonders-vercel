@@ -50,7 +50,7 @@ export async function POST(request) {
     // Email to info@globalwonders.co
     const { data: notificationData, error: notificationError } =
       await resend.emails.send({
-        from: "Global Wonders <onboarding@resend.dev>",
+        from: "Global Wonders <no-reply@no-reply.globalwonders.co>",
         to: "info@globalwonders.co",
         subject: `🚀 New Founder Interest: ${companyName} - ${finalSector}`,
         html: `
@@ -400,7 +400,7 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
     // Confirmation email to the founder
     const { data: confirmationData, error: confirmationError } =
       await resend.emails.send({
-        from: "Global Wonders <onboarding@resend.dev>",
+        from: "Global Wonders <no-reply@no-reply.globalwonders.co>",
         to: email,
         subject: `Thank you for your interest, ${fullName.split(" ")[0]}!`,
         html: `
@@ -583,9 +583,15 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               </ul>
               
               <p><strong>Need immediate assistance?</strong> Feel free to reach out to us directly:</p>
-              <p style="color: #1B7A72; font-weight: 600;">
-                📧 info@globalwonders.co<br>
-              </p>
+             <p style="color: #1B7A72; font-weight: 600;">
+              📧 <a href="mailto:info@globalwonders.co" style="color:#1B7A72; text-decoration:none;">
+                 info@globalwonders.co
+  </a><br>
+  📞 <a href="tel:+919867023591" style="color:#1B7A72; text-decoration:none;">
+    +91 98670 23591
+  </a>
+</p>
+
               
               <div class="signature">
                 <p style="margin-bottom: 5px; color: #1f2937;">Warm regards,</p>
@@ -599,6 +605,9 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               <p>NO. 11 2ND FLOOR, DIVYA COMMERCIAL COMPLEX, NO. 37<br>
               Mumbai-400071, Maharashtra, India</p>
               <p>📧 <a href="mailto:info@globalwonders.co">info@globalwonders.co</a>
+              📞 <a href="tel:+919867023591" style="color:#1B7A72; text-decoration:none;">
+    +91 98670 23591
+  </a>
               <p style="margin-top: 15px; font-size: 11px; color: #9ca3af;">
                 This email was sent because you submitted a Founder Interest Form on our website.<br>
                 © 2025 Global Wonders. All rights reserved.
