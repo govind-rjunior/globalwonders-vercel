@@ -1,22 +1,24 @@
 import React from 'react';
+import DeckFigure from './DeckFigure';
 
 export default function ProcessFlow() {
   const steps = [
-    { num: 1, title: "Application & Assessment", desc: "Introductory calls to assess companies" },
-    { num: 2, title: "Advisory & Preparation", desc: "Tailored advisory services" },
-    { num: 3, title: "Investor Introductions", desc: "Structured investor connections" },
-    { num: 4, title: "Negotiation & Structuring", desc: "Deal terms and agreements" },
-    { num: 5, title: "Closure & Support", desc: "Post-investment assistance" }
+    { num: 1, title: "Screen", desc: "Assess company, raise objective, current materials, readiness gaps" },
+    { num: 2, title: "Prepare", desc: "Build or refine memo, deck, model, use of funds, and data room" },
+    { num: 3, title: "Map", desc: "Create investor list by sector, stage, ticket size, geography, and exclusions" },
+    { num: 4, title: "Run", desc: "Manage outreach, introductions, Q&A, feedback, and process tracking" },
+    { num: 5, title: "Close", desc: "Support term discussion, structure, diligence responses, and handover" }
   ];
 
   return (
     <section id="process" className="bg-[#1B7A72]/5 py-20 px-4">
       <div className="mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-semibold text-[#1B7A72] text-center mb-4">
-          How It Works
+          What Global Wonders Does
         </h2>
         <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-          Our streamlined process ensures a smooth journey from initial contact to successful investment
+          We do not manufacture investor interest. We improve the quality, sequencing,
+          and discipline of a capital raise process.
         </p>
 
         {/* Desktop Horizontal Flow */}
@@ -32,7 +34,7 @@ export default function ProcessFlow() {
                   <h4 className="mt-4 font-medium text-[#1B7A72] text-center text-sm leading-snug">
                     {step.title}
                   </h4>
-                  <p className="mt-2 text-xs text-slate-600 text-center max-w-[130px]">
+                  <p className="mt-2 text-xs text-slate-600 text-center max-w-[150px]">
                     {step.desc}
                   </p>
                 </div>
@@ -77,6 +79,15 @@ export default function ProcessFlow() {
           </div>
         </div>
 
+        {/* Process infographic */}
+        <div className="mb-16">
+          <DeckFigure
+            src="/deck/slide-05.jpg"
+            alt="What Global Wonders does: a five-step process — screen, prepare, map, run, close — creating value through deal packaging, investor curation and negotiation support drawn from 150+ fund relationships"
+            caption="Focused execution across three critical workstreams to de-risk your capital raise."
+          />
+        </div>
+
         {/* Detailed Process Cards */}
         <div className="grid md:grid-cols-2 gap-8">
           {/* Initial Engagement */}
@@ -101,7 +112,7 @@ export default function ProcessFlow() {
               Once due diligence is complete, onboarding commences with a mandate letter that outlines financial terms. We provide a negative list of previously contacted investors and a document checklist to ensure compliance, signalling a formal commitment to proceed.
             </p>
             <p className="text-slate-700">
-              Upon signing the mandate, we finalise legal documents and your investment docket, curate a list of investors whose criteria align with your business model and then execute the investment transaction. Our goal is to expedite fundraising by proactively targeting the right investors.
+              Upon signing the mandate, we finalise legal documents and your investment docket, curate a list of investors whose criteria align with your business model and then execute the investment transaction. Curated outreach is intentionally slower than database blasts — we optimise for thesis-matched leads, not first response.
             </p>
           </div>
         </div>

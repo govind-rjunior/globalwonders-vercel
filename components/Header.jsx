@@ -12,12 +12,12 @@ export default function Header() {
         {/* Logo and brand */}
         <a href="/" className="flex items-center gap-3">
           <Image
-            src="/new-logo.png"
-            alt="Global Wonders logo"
-            width={937}
-            height={625}
+            src="/logo-globalwonders.png"
+            alt="Global Wonders — Management Consultants"
+            width={1200}
+            height={652}
             priority
-            className="h-10 md:h-12 w-auto bg-white rounded-md p-1 shadow-sm"
+            className="h-11 md:h-14 w-auto"
           />
         </a>
         

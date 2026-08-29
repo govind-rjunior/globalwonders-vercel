@@ -11,19 +11,16 @@ export default function Footer() {
                     <div>
                         <div className="flex items-center mb-4">
                             <Image
-                                src="/new-logo.png"
-                                alt="Global Wonders Logo"
-                                width={50}
-                                height={50}
-                                className="mr-3"
+                                src="/logo-globalwonders-white.png"
+                                alt="Global Wonders — Management Consultants"
+                                width={1200}
+                                height={652}
+                                className="h-16 w-auto"
                             />
-                            <div>
-                                <h3 className="text-xl font-bold text-white">GLOBAL WONDERS</h3>
-                                <p className="text-xs text-slate-400">Investment Advisory Services</p>
-                            </div>
                         </div>
-                        <p className="text-sm text-slate-400 leading-relaxed">
-                            Connecting Smart Funds with Game-Changing Startups. Responsible realization of capital through expert advisory and partnership.
+                        <p className="mt-4 text-sm text-slate-400 leading-relaxed">
+                            Capital advisory for private companies focused on equity &amp; strategic capital.
+                            The Right Connection. The Right Direction.
                         </p>
                     </div>
 
@@ -65,7 +62,7 @@ export default function Footer() {
                 <div className="pt-6 flex flex-col md:flex-row justify-between items-center gap-4">
                     {/* Copyright */}
                     <p className="text-sm text-slate-500">
-                        © 2025 Global Wonders. All rights reserved.
+                        © {new Date().getFullYear()} Global Wonders. All rights reserved.
                     </p>
 
                     {/* Legal Links */}
