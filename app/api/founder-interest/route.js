@@ -579,7 +579,7 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
                 <li>Our network of 100+ VC funds and angel investors</li>
                 <li>Comprehensive fundraising support services</li>
                 <li>Success stories from founders we've helped</li>
-                <li>Tailored deal structuring and M&A advisory</li>
+                <li>Tailored deal structuring and investment readiness support</li>
               </ul>
               
               <p><strong>Need immediate assistance?</strong> Feel free to reach out to us directly:</p>
