@@ -59,7 +59,7 @@ const organizationJsonLd = {
   url: "https://www.globalwonders.co",
   logo: "https://www.globalwonders.co/logo-globalwonders.png",
   email: "info@globalwonders.co",
-  telephone: "+919867023591",
+  telephone: "+919867023787",
   address: {
     "@type": "PostalAddress",
     addressLocality: "Mumbai",

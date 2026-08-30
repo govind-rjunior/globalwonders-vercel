@@ -51,7 +51,14 @@ export default function Footer() {
                                     info@globalwonders.co
                                 </a>
                                 <p className="text-slate-400 mt-1">
-                                    <a href="tel:+919867023591" className="hover:text-white transition-colors">+91 98670 23591 (Available on WhatsApp)</a>
+                                    <a
+                                        href="https://wa.me/919867023787?text=Hello%2C%20I%20would%20like%20to%20connect%20with%20Global%20Wonders%20regarding%20fundraising%20advisory."
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="hover:text-white transition-colors"
+                                    >
+                                        +91 98670 23787 (Message us on WhatsApp)
+                                    </a>
                                 </p>
                             </div>
                         </div>

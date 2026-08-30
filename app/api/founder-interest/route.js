@@ -587,8 +587,8 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               📧 <a href="mailto:info@globalwonders.co" style="color:#1B7A72; text-decoration:none;">
                  info@globalwonders.co
   </a><br>
-  📞 <a href="tel:+919867023591" style="color:#1B7A72; text-decoration:none;">
-    +91 98670 23591
+  📞 <a href="https://wa.me/919867023787" style="color:#1B7A72; text-decoration:none;">
+    +91 98670 23787
   </a>
 </p>
 
@@ -596,7 +596,7 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               <div class="signature">
                 <p style="margin-bottom: 5px; color: #1f2937;">Warm regards,</p>
                 <p style="font-weight: 600; color: #1B7A72; font-size: 16px;">The Global Wonders Team</p>
-                <p style="font-size: 14px; color: #6b7280; margin-top: 5px;">Connecting Smart Funds with Game-Changing Startups</p>
+                <p style="font-size: 14px; color: #6b7280; margin-top: 5px;">The Right Connection. The Right Direction.</p>
               </div>
             </div>
             
@@ -605,12 +605,12 @@ Submitted: ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}
               <p>NO. 11 2ND FLOOR, DIVYA COMMERCIAL COMPLEX, NO. 37<br>
               Mumbai-400071, Maharashtra, India</p>
               <p>📧 <a href="mailto:info@globalwonders.co">info@globalwonders.co</a>
-              📞 <a href="tel:+919867023591" style="color:#1B7A72; text-decoration:none;">
-    +91 98670 23591
+              📞 <a href="https://wa.me/919867023787" style="color:#1B7A72; text-decoration:none;">
+    +91 98670 23787
   </a>
               <p style="margin-top: 15px; font-size: 11px; color: #9ca3af;">
                 This email was sent because you submitted a Founder Interest Form on our website.<br>
-                © 2025 Global Wonders. All rights reserved.
+                © 2026 Global Wonders. All rights reserved.
               </p>
             </div>
           </div>
@@ -640,7 +640,7 @@ Email: info@globalwonders.co
 
 Warm regards,
 The Global Wonders Team
-Connecting Smart Funds with Game-Changing Startups
+The Right Connection. The Right Direction.
 
 ---
 RAMAN GLOBALWONDERS CONSULTING PRIVATE LIMITED
