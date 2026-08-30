@@ -6,11 +6,8 @@ import {
   DealIcon,
   FundraisingIcon,
   NetworkIcon,
-  MAIcon,
   VCIcon,
-  DebtIcon,
   TrendUpIcon,
-  UsersIcon,
   RocketIcon,
   ShieldIcon
 } from './Icons';
@@ -179,7 +176,7 @@ export default function GlobalWondersSite() {
             Integrated solutions that de-risk your raise and accelerate access to the right strategic capital.
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {/* Tailored Deal Structuring */}
             <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
@@ -234,48 +231,22 @@ export default function GlobalWondersSite() {
               </ul>
             </div>
 
-            {/* M&A Services */}
-            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
-                <MAIcon />
-              </div>
-              <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
-                M&amp;A Services
-              </h3>
-              <ul className="list-disc ml-5 text-slate-700 space-y-1.5 text-sm">
-                <li>
-                  Advisory on integration strategies to ensure a smooth transition post-investment.
-                </li>
-                <li>
-                  Ongoing advisory post-deal closure to achieve desired outcomes.
-                </li>
-              </ul>
-            </div>
-
-            {/* Venture Capital & Private Equity */}
+            {/* Venture Capital */}
             <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
               <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
                 <VCIcon />
               </div>
               <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
-                Venture Capital &amp; Private Equity
+                Venture Capital
               </h3>
-              <p className="text-slate-700 text-sm">
-                Comprehensive assistance in securing capital infusion at all stages of a company's growth.
-              </p>
-            </div>
-
-            {/* Debt Financing */}
-            <div className="p-6 rounded-2xl border border-slate-200 shadow-sm bg-white hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 rounded-xl bg-[#1B7A72]/10 flex items-center justify-center text-[#1B7A72] mb-4">
-                <DebtIcon />
-              </div>
-              <h3 className="text-xl font-semibold text-[#1B7A72] mb-3">
-                Debt Financing
-              </h3>
-              <p className="text-slate-700 text-sm">
-                Navigate beyond equity transactions with advisory on working capital loans, venture debt and revenue-based financing.
-              </p>
+              <ul className="list-disc ml-5 text-slate-700 space-y-1.5 text-sm">
+                <li>
+                  Focused support for venture capital raises in the $1M&ndash;$8M range.
+                </li>
+                <li>
+                  A curated list of funds matched to your stage, sector, and ticket &mdash; not a volume spray.
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -318,57 +289,74 @@ export default function GlobalWondersSite() {
         </div>
       </section>
 
-      {/* Responsible Realization Section */}
-      <section id="responsible" className="mx-auto max-w-5xl px-4 py-20">
-        <h2 className="text-3xl md:text-4xl font-semibold text-[#1B7A72] mb-6">
+      {/* Responsible Realization / Infrastructure for Investors Section */}
+      <section id="responsible" className="mx-auto max-w-6xl px-4 py-20">
+        <h2 className="text-3xl md:text-4xl font-semibold text-[#1B7A72] mb-4">
           Responsible Realization of Capital
         </h2>
-        <p className="text-slate-700 mb-6">
-          We believe that capital must be deployed responsibly to create lasting
-          impact. Our approach aligns investor interests with founder ambitions
-          through clear objectives and collaborative engagement.
+        <p className="text-slate-700 mb-2 max-w-3xl">
+          For investors, we are infrastructure — we plug into the investor
+          workflow, not around it. Each function below removes friction your
+          team already absorbs, and selection authority stays with you.
+        </p>
+        <p className="text-slate-700 mb-8 max-w-3xl font-medium">
+          We are the operational layer between intro and close.
         </p>
         <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-xl font-medium text-[#1B7A72] mb-3">
-              Objectives
+          <div className="p-6 rounded-2xl border border-slate-200 bg-slate-50">
+            <h3 className="text-xl font-medium text-slate-700 mb-3">
+              Where Funds Spend Time
             </h3>
-            <ul className="list-disc ml-5 text-slate-700 space-y-1">
+            <ul className="list-disc ml-5 text-slate-700 space-y-2">
               <li>
-                Connect investors with startups holding high potential for impact and returns.
+                Sourcing deals that match your thesis &mdash; high effort, low
+                yield. Most time is lost here for funds.
               </li>
               <li>
-                Provide investors with a clear understanding of each
-                startup's strategic direction and use of funds.
+                Initial screening of new opportunities &mdash; information is
+                scattered and inconsistent, slowing down first-pass decisions.
               </li>
               <li>
-                Promote financial sustainability and scalable growth models
-                within the startup ecosystem.
+                Founder access and meeting coordination &mdash; time spent on
+                back-and-forth scheduling instead of evaluating.
               </li>
               <li>
-                Track and report on fund utilisation and milestones achieved
-                by funded startups.
+                Round build and co-investor orchestration &mdash; a complex,
+                time-intensive process to align the right investors.
               </li>
             </ul>
           </div>
-          <div>
+          <div className="p-6 rounded-2xl border border-[#1B7A72]/30 bg-[#1B7A72]/5">
             <h3 className="text-xl font-medium text-[#1B7A72] mb-3">
-              Key Points
+              Where We Compress It
             </h3>
-            <ul className="list-disc ml-5 text-slate-700 space-y-1">
+            <ul className="list-disc ml-5 text-slate-700 space-y-2">
               <li>
-                Streamlined access to a vetted pipeline of startups.
+                A pre-filtered pipeline against your stated thesis &mdash;
+                sector, stage, ticket, geography. Off-thesis flow suppressed at
+                our end.
               </li>
               <li>
-                Reduced time and resources required for sourcing and due
-                diligence.
+                A pre-staged diligence pack delivered with the intro: deck,
+                model, cap table, KPI snapshot. Screening compresses meaningfully.
               </li>
               <li>
-                Participation in a collaborative ecosystem that enhances the
-                collective success of all stakeholders.
+                Direct calendar handoff to the founder &mdash; we coordinate
+                logistics; we do not gatekeep the relationship.
+              </li>
+              <li>
+                Lead / follow optionality preserved &mdash; we manage syndicate
+                sequencing so your team retains decision speed.
               </li>
             </ul>
           </div>
+        </div>
+        <div className="mt-10">
+          <DeckFigure
+            src="/deck/slide-16.jpg"
+            alt="Infrastructure for investors: where funds spend time — sourcing, screening, founder access, round build — and where Global Wonders compresses it with a pre-filtered pipeline, pre-staged diligence pack, direct calendar handoff, and preserved lead/follow optionality"
+            caption="Less time on busywork. More signal, less noise. Better conversations with the right founders."
+          />
         </div>
       </section>
 
