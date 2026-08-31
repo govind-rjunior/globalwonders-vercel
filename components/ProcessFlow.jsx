@@ -3,11 +3,11 @@ import DeckFigure from './DeckFigure';
 
 export default function ProcessFlow() {
   const steps = [
-    { num: 1, title: "Screen", desc: "Assess company, raise objective, current materials, readiness gaps" },
-    { num: 2, title: "Prepare", desc: "Build or refine memo, deck, model, use of funds, and data room" },
-    { num: 3, title: "Map", desc: "Create investor list by sector, stage, ticket size, geography, and exclusions" },
-    { num: 4, title: "Run", desc: "Manage outreach, introductions, Q&A, feedback, and process tracking" },
-    { num: 5, title: "Close", desc: "Support term discussion, structure, diligence responses, and handover" }
+    { num: 1, title: "Screen", desc: "Assess company, raise objective, current materials and readiness gaps" },
+    { num: 2, title: "Prepare", desc: "Build or refine memo, deck, model, use of funds and data room" },
+    { num: 3, title: "Map", desc: "Create investor list by sector, stage, ticket size, geography and exclusions" },
+    { num: 4, title: "Run", desc: "Manage outreach, introductions, Q&A, feedback and process tracking" },
+    { num: 5, title: "Close", desc: "Support term discussion, structure, diligence responses and handover" }
   ];
 
   return (
