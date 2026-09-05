@@ -129,7 +129,7 @@ export default function GlobalWondersSite() {
               Targeted Investor Access
             </h3>
             <p className="text-slate-700">
-              Leverage relationships with 150+ funds — VCs, family offices, and angels.
+              Working relationships with 150+ funds, including VCs, family offices and angels.
             </p>
           </div>
           <div>
@@ -177,7 +177,7 @@ export default function GlobalWondersSite() {
             Our Solutions for Startups
           </h2>
           <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-            Integrated solutions that de-risk your raise and accelerate access to the right strategic capital.
+            Integrated solutions that de-risk a company&apos;s raise and accelerate access to the right strategic capital.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -248,7 +248,7 @@ export default function GlobalWondersSite() {
                   Focused support for venture capital raises in the $1M&ndash;$8M range.
                 </li>
                 <li>
-                  A curated list of funds matched to your stage, sector, and ticket &mdash; not a volume spray.
+                  A curated list of funds chosen for your stage, sector and ticket size, rather than a mass mailing to every investor in the database.
                 </li>
               </ul>
             </div>
@@ -302,7 +302,7 @@ export default function GlobalWondersSite() {
           For investors, we work as infrastructure. We plug into the fund&apos;s
           existing workflow rather than working around it. Each function below
           removes friction the fund&apos;s team already absorbs, and selection
-          authority stays with you.
+          authority stays with the fund.
         </p>
         <p className="text-slate-700 mb-8 max-w-3xl font-medium">
           We are the operational layer between intro and close.
