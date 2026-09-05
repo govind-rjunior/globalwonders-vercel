@@ -17,8 +17,8 @@ export default function ProcessFlow() {
           What Global Wonders Does
         </h2>
         <p className="text-center text-slate-600 mb-12 max-w-2xl mx-auto">
-          We do not manufacture investor interest. We improve the quality, sequencing,
-          and discipline of a capital raise process.
+          We do not manufacture investor interest. We improve the quality, sequencing
+          and discipline of a capital raising process.
         </p>
 
         {/* Desktop Horizontal Flow */}

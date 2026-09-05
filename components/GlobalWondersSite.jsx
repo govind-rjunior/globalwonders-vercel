@@ -44,7 +44,10 @@ export default function GlobalWondersSite() {
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg md:text-xl text-slate-700">
             A practical execution partner for private companies preparing to raise
-            equity or strategic capital. The Right Connection. The Right Direction.
+            equity and strategic capital.
+          </p>
+          <p className="mt-3 max-w-2xl mx-auto text-center text-lg md:text-xl font-medium text-[#1B7A72]">
+            The right connection and the right direction.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -107,9 +110,10 @@ export default function GlobalWondersSite() {
         </h2>
         <p className="text-slate-700 leading-relaxed max-w-3xl">
           Global Wonders is a capital advisory firm for private companies focused on
-          equity and strategic capital. We do not manufacture investor interest — we
-          improve the quality, sequencing, and discipline of a capital raise process,
-          so the right investors see the right opportunity with decision-quality material.
+          equity and strategic capital. We do not manufacture investor interest. We
+          improve the quality, sequencing and discipline of a capital raising process
+          so that the right investors see the right opportunity, backed by material
+          they can make a decision on.
         </p>
         <div className="mt-8 grid md:grid-cols-3 gap-8">
           <div>
@@ -150,10 +154,10 @@ export default function GlobalWondersSite() {
       <section id="problem" className="bg-[#1B7A72]/5 py-20 px-4">
         <div className="mx-auto max-w-6xl">
           <h2 className="text-3xl md:text-4xl font-semibold text-[#1B7A72] text-center mb-4">
-            The Problem Is Not Capital Scarcity. It Is Process Friction.
+            The Problem Is Not Capital Scarcity. It is Process Friction.
           </h2>
           <p className="text-center text-slate-600 mb-10 max-w-3xl mx-auto">
-            Founders and investors lose time because the company is usually not ready
+            Founders and investors lose time because the founders are usually not ready
             for institutional evaluation when outreach begins. Founders raising
             $1M–$8M sit in a structural blind spot: too small for bulge-bracket banks,
             too large for syndicate platforms, outside warm-network range.
@@ -268,11 +272,11 @@ export default function GlobalWondersSite() {
           </h2>
           <p className="text-center text-slate-600 mb-10 max-w-3xl mx-auto">
             Most capital raises fail before outreach because the company cannot answer
-            basic investor questions with clean evidence. A founder should be able to
+            basic investor questions with clear evidence. A founder should be able to
             explain the raise in one meeting and support every claim with a document,
-            number, or operating fact. And investor access is a matching problem, not
-            a volume game — we filter the investor universe by actual mandate fit
-            before outreach begins.
+            number or operating fact. Investor access is a matching problem rather
+            than a volume game, so we filter the investor universe by actual mandate
+            fit before outreach begins.
           </p>
           <div className="grid lg:grid-cols-2 gap-8">
             <DeckFigure
@@ -295,9 +299,10 @@ export default function GlobalWondersSite() {
           Responsible Realization of Capital
         </h2>
         <p className="text-slate-700 mb-2 max-w-3xl">
-          For investors, we are infrastructure — we plug into the investor
-          workflow, not around it. Each function below removes friction your
-          team already absorbs, and selection authority stays with you.
+          For investors, we work as infrastructure. We plug into the fund&apos;s
+          existing workflow rather than working around it. Each function below
+          removes friction the fund&apos;s team already absorbs, and selection
+          authority stays with you.
         </p>
         <p className="text-slate-700 mb-8 max-w-3xl font-medium">
           We are the operational layer between intro and close.
@@ -309,20 +314,20 @@ export default function GlobalWondersSite() {
             </h3>
             <ul className="list-disc ml-5 text-slate-700 space-y-2">
               <li>
-                Sourcing deals that match your thesis &mdash; high effort, low
-                yield. Most time is lost here for funds.
+                Sourcing deals that fit the thesis. This is high effort and low
+                yield, and it is where funds lose the most time.
               </li>
               <li>
-                Initial screening of new opportunities &mdash; information is
-                scattered and inconsistent, slowing down first-pass decisions.
+                Screening new opportunities. Information arrives scattered and
+                inconsistent, which slows down first-pass decisions.
               </li>
               <li>
-                Founder access and meeting coordination &mdash; time spent on
-                back-and-forth scheduling instead of evaluating.
+                Reaching founders and coordinating meetings. Time goes into
+                scheduling back and forth instead of evaluating the company.
               </li>
               <li>
-                Round build and co-investor orchestration &mdash; a complex,
-                time-intensive process to align the right investors.
+                Building the round and lining up co-investors. Getting the right
+                investors aligned is slow, detailed work.
               </li>
             </ul>
           </div>
@@ -332,21 +337,22 @@ export default function GlobalWondersSite() {
             </h3>
             <ul className="list-disc ml-5 text-slate-700 space-y-2">
               <li>
-                A pre-filtered pipeline against your stated thesis &mdash;
-                sector, stage, ticket, geography. Off-thesis flow suppressed at
-                our end.
+                A pipeline already filtered against your stated thesis on sector,
+                stage, ticket and geography. Deals that fall outside it are
+                stopped at our end.
               </li>
               <li>
-                A pre-staged diligence pack delivered with the intro: deck,
-                model, cap table, KPI snapshot. Screening compresses meaningfully.
+                A diligence pack that arrives with the intro: deck, model, cap
+                table and KPI snapshot. Your first-pass screening takes far less
+                time.
               </li>
               <li>
-                Direct calendar handoff to the founder &mdash; we coordinate
-                logistics; we do not gatekeep the relationship.
+                A direct calendar handoff to the founder. We handle the logistics
+                and we do not gatekeep the relationship.
               </li>
               <li>
-                Lead / follow optionality preserved &mdash; we manage syndicate
-                sequencing so your team retains decision speed.
+                Lead or follow, your choice. We manage syndicate sequencing so
+                your team keeps its decision speed.
               </li>
             </ul>
           </div>
@@ -368,9 +374,9 @@ export default function GlobalWondersSite() {
           Connecting Capital to Innovation. Powering Global Impact.
         </h2>
         <p className="text-center text-slate-600 mb-10 max-w-3xl mx-auto">
-          Global Wonders bridges the gap between startups and investors, ensuring
-          capital flows to the right opportunities — stronger companies, sustainable
-          growth, meaningful returns for investors.
+          Global Wonders connects startups with investors so that capital reaches
+          the right opportunities. The result is stronger companies, growth that
+          lasts and returns that matter to investors.
         </p>
         <DeckFigure
           src="/deck/slide-17.jpg"
