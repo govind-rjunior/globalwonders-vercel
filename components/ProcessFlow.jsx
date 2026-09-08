@@ -99,7 +99,7 @@ export default function ProcessFlow() {
               We begin with an initial call to understand the founder&apos;s vision, mission and goals for the company. This discussion covers the company&apos;s background, product or service offerings, market potential and team composition, helping us establish rapport and clarify expectations.
             </p>
             <p className="text-slate-700">
-              Within a week after the call, we perform background checks to evaluate viability, growth prospects and risks by reviewing your business model, expansion plans, financials, legal documents and technology assessments.
+              Within a week after the call, we perform background checks to evaluate viability, growth prospects and risks by reviewing the company&apos;s business model, expansion plans, financials, legal documents and technology assessments.
             </p>
           </div>
 
@@ -112,7 +112,7 @@ export default function ProcessFlow() {
               Once due diligence is complete, onboarding commences with a mandate letter that outlines financial terms. We provide a negative list of previously contacted investors and a document checklist to ensure compliance, signalling a formal commitment to proceed.
             </p>
             <p className="text-slate-700">
-              Upon signing the mandate, we finalise the legal documents and the company&apos;s investment docket, curate a list of investors whose criteria align with your business model and then execute the investment transaction. Curated outreach is intentionally slower than database blasts — we optimise for thesis-matched leads, not first response.
+              Upon signing the mandate, we finalise the legal documents and the company&apos;s investment docket, curate a list of investors whose criteria align with the company&apos;s business model and then execute the investment transaction. Curated outreach is intentionally slower than database blasts because we optimise for thesis-matched leads rather than the first response.
             </p>
           </div>
         </div>
